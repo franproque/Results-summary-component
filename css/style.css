@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+/*
+M - 24px
+*/
+ul {
+    list-style: none;
+}
+
+.container-external {
+    width: 100%;
+    height: 100vh;
+    background-color: #ECF2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-internal {
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    display: flex;
+}
+
+.container-internal aside {
+    background: linear-gradient(#7755FF, #6943FF, #2F2CE9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 32px;
+    max-width: 368px;
+}
+
+.container-internal aside h2 {
+    color: #CAC9FF;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 38px;
+}
+
+.container-internal aside div {
+    height: 200px;
+    width: 200px;
+    background:linear-gradient(#4D21C9,#2421c980,#2421c91c);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.container-internal aside h3 {
+    color:#FFFFFF;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.description-quantity {
+    font-size: 18px;
+    color:#CAC9FF ;
+}
+
+.container-internal aside span {
+    display: block;
+    color: #FFFFFF;
+    font-size:32px ;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+.paragrafo{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 55px;
+    text-align: center;
+    margin: 14px 54px 55px 54px;
+}
+
+.container-internal main {
+    display: flex;
+    flex-direction: column;
+    padding: 38px 40px 46px 40px;
+}
+.container-internal main h2 {
+    color: #303B59;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-internal main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 28px;
+    margin-bottom: 41px;
+}
+.container-internal main ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    width: 288px;
+    border-radius: 12px;
+    padding: 0 16px;
+   
+}
+.container-internal main ul li p {
+   color: #303b5973;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.container-internal main ul li p span {
+    color: #303B59;
+ }
+.container-internal main ul li figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-internal main ul li figure span {
+   font-size: 18px;
+   margin-left: 12px;
+}
+.container-internal main button {
+    border-radius: 128px;
+    height: 56px;
+    width: 288px;
+    color: #ffff;
+    background-color: #303B59;
+    font-size: 18px;
+    font-weight: bold;
+    border-color: transparent;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+.container-internal main button:hover {
+    background:linear-gradient(#7755FF,#6943FF,#2F2CE9);
+    
+}
+.flash {
+    background-color: #ff555510;
+}
+.flash figure span {
+    color: red;
+}
+
+.brain {
+    background-color:#ffb01e0f ;
+}
+
+.brain figure span {
+    color: #FFB21E;
+}
+.chat {
+    background-color: #00bb8f17;
+}
+
+.brain figure span {
+    color:#00BB8F
+}
+.eye {
+    background-color: #1125d613;
+}
+.eye figure span {
+    color: #1125D6;
+}
+
+@media (width<=800px) {
+    .container-external {
+        height: 100%;
+    }
+    .container-internal {
+        flex-direction: column;
+        width: 100%;
+    }
+    .container-internal aside {
+        max-width: 100%;
+        border-radius: 0 0 32px 32px;
+    }
+
+    .container-internal main ul li {
+        width: 100%;
+    }
+
+    .container-internal main button {
+        width: 100%;
+    }
+}
